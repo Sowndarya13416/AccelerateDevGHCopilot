@@ -19,8 +19,8 @@ services.AddScoped<IPatronService, PatronService>();
 
 services.AddSingleton<JsonData>();
 services.AddSingleton<ConsoleApp>();
-
 var servicesProvider = services.BuildServiceProvider();
 
 var consoleApp = servicesProvider.GetRequiredService<ConsoleApp>();
 consoleApp.Run().Wait();
+

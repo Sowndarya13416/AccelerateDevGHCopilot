@@ -11,6 +11,10 @@ public class JsonPatronRepository : IPatronRepository
     {
         _jsonData = jsonData;
     }
+    public JsonData GetJsonData()
+{
+    return _jsonData;
+}
 
     public async Task<List<Patron>> SearchPatrons(string searchInput)
     {
